@@ -11,13 +11,13 @@
     <h3 class="text-center m-5">URL Shortener Microservice</h3>
     <h5 class="text-center">Short URL Creation</h5>
     <p class="text-center m-5">Example: <b>POST</b> [project_url]/api/shorturl - <b>https://www.google.com</b></p>
-    <div class="container d-flex justify-content-center">
-        <form action="/api/shorturl" method="post" class="w-50">
-            <fieldset class="border border-secondary p-3 ">
+    <div class="container-lg d-flex justify-content-center">
+        <form action="/api/shorturl" method="post">
+            <fieldset class="border border-secondary p-3 w-100">
                 <legend class="text-center">Url Shortener</legend>
-                <div class="d-flex justify-content-center">
+                <div class="text-center d-flex flex-column justify-content-center d-block">
                     <label for="url">URL: </label>
-                    <input type="url" name="url" class="w-50 mx-3">
+                    <input type="url" name="url" class="w-100 ">
                     <button class="border border-secondary">POST</button>
                 </div>
             </fieldset>
