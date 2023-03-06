@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+    <title>Url Shortener</title>
+</head>
+<body>
+    <h3 class="text-center m-5">URL Shortener Microservice</h3>
+    <h5 class="text-center">Short URL Creation</h5>
+    <p class="text-center m-5">Example: <b>POST</b> [project_url]/api/shorturl - <b>https://www.google.com</b></p>
+    <div class="container d-flex justify-content-center">
+        <form action="/api/shorturl" method="post" class="w-50">
+            <fieldset class="border border-secondary p-3 ">
+                <legend class="text-center">Url Shortener</legend>
+                <div class="d-flex justify-content-center">
+                    <label for="url">URL: </label>
+                    <input type="url" name="url" class="w-50 mx-3">
+                    <button class="border border-secondary">POST</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container">
+        <h5 class="text-center m-3">Example Usage:</h5>
+        <p class="text-center"><a href="/api/shorturl/3">[this_project_url]/api/shorturl/3</a></p>
+        <h5 class="text-center m-3"> Will redirect to:</h5>
+        <p class="text-center m-3">https://forum.freecodecamp.org/</p>
+    </div>
+    <p class="text-center"><span >By <a target="_blank" href="https://github.com/Adriangln11/url-shortener-microservice">Adriangln11</a></span></p>
+</body>
+</html>
