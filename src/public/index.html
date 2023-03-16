@@ -8,18 +8,19 @@
     <title>Url Shortener</title>
 </head>
 <body>
-    <h3 class="text-center m-5">URL Shortener Microservice</h3>
+    <h3 class="text-center m-3">URL Shortener Microservice</h3>
     <h5 class="text-center">Short URL Creation</h5>
     <p class="text-center m-5">Example: <b>POST</b> [project_url]/api/shorturl - <b>https://www.google.com</b></p>
     <div class="container-lg d-flex justify-content-center">
         <form action="/api/shorturl" method="post">
-            <fieldset class="border border-secondary p-3 w-100">
-                <legend class="text-center">Url Shortener</legend>
-                <div class="text-center d-flex flex-column justify-content-center d-block">
-                    <label for="url">URL: </label>
-                    <input type="url" name="url" class="w-100 ">
-                    <button class="border border-secondary">POST</button>
-                </div>
+            <fieldset class=" p-3 w-100">
+                <div class="mb-3">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">URL:</span>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="form-text">https://adriangln11.up.railway.app/</div>
+                  </div>
             </fieldset>
         </form>
     </div>
